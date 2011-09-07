@@ -31,7 +31,7 @@ public class TotalTestAwareHtmlRenderer implements HtmlRenderer {
     builder.append("<br>Supports up to <b>").append(proxy.getMaxNumberOfConcurrentTestSessions())
         .append("</b> concurrent tests from : </u><br>");
 
-    builder.append("this proxy ran ").append(proxy.getTotalTests()).append(" already.<br>");
+    builder.append("this proxy ran ").append(proxy.getTotalTests()).append(" tests already.<br>");
 
 
     for (TestSlot slot : proxy.getTestSlots()) {
