@@ -22,7 +22,7 @@ public class TotalTestAwareHtmlRenderer implements HtmlRenderer {
     StringBuilder builder = new StringBuilder();
     builder.append("<fieldset>");
     builder.append("<legend>").append(proxy.getClass().getSimpleName()).append("</legend>");
-    builder.append("listening on ").append(proxy.getRemoteURL());
+    builder.append("listening on ").append(proxy.getRemoteHost());
     if (proxy.getTimeOut() > 0) {
       int inSec = proxy.getTimeOut() / 1000;
       builder.append("test session time out after ").append(inSec).append(" sec.");
